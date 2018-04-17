@@ -3,7 +3,7 @@ title: "作業2"
 params:
   group: 11
   id: [1234, 5678]
-  name: ["ntpuecon","NTPUSOC"]
+  name: ["ntpuecon","李"]
 output:
   html_notebook:
     df_print: paged
