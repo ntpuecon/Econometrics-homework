@@ -3,18 +3,18 @@ title: "作業2"
 params:
   group: 11
   id: [1234, 5678]
-  name: ["王","李"]
+  name: ["ntpuecon","李"]
 output:
   html_notebook:
     df_print: paged
 ---
-請依狀況更改上面的name,id及group（分別代表組員姓名，學號及組號），但請「勿」更改下面姓名、學號、組號三行的設定。  
+請依狀況更改上面的name,id及group（分別代表組員姓名，學號及組號），但請「勿」更改下面姓名、學號、組號三行的設定。
 
 ***
 
-姓名：`r params$name`  
-學號：`r params$id`  
-組號：`r params$group`  
+姓名：`r params$name`
+學號：`r params$id`
+組號：`r params$group`
 
 ***
 
@@ -40,7 +40,7 @@ labordata <- read_csv("http://people.stern.nyu.edu/wgreene/Econometrics/cornwell
 
 ```
 
-### (2) 
+### (2)
 我們想要估計薪資對工時的影響（即勞動供給），考慮如下的勞動供給函數
 $$wks_{i}=\beta_0+\beta_1 lwage_{i}+\epsilon_i$$
 
@@ -113,7 +113,7 @@ $$wks_{i}=\beta_0+\beta_1 lwage_{i} + \beta_2 ed_{i} +\beta_3 union_{i} +\beta_4
 
 ```
 
-### (11) 
+### (11)
 使用工具變數法, 同時使用ind及smsa當工具變數，估計複迴歸模型下的$\beta_1$係數，並進行工具變數合理性的相關檢定。
 
 ```{r}
